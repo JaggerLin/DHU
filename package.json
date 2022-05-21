@@ -1,0 +1,21 @@
+{
+  "name": "miniprogram-1",
+  "version": "1.0.0",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@miniprogram-component-plus/col": "^1.0.0",
+    "@miniprogram-component-plus/row": "^1.0.0",
+    "@vant/weapp": "^1.10.2",
+    "miniprogram-api-promise": "^1.0.4",
+    "miniprogram-computed": "^4.3.8",
+    "mobx-miniprogram": "^4.13.2",
+    "mobx-miniprogram-bindings": "^2.1.5"
+  },
+  "description": ""
+}

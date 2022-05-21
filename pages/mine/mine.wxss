@@ -1,0 +1,67 @@
+/* pages/mine/mine.wxss */
+/* 整体容器 */
+.mineContainer{
+  display: flex;
+  align-items: center;
+}
+/* 头像框 */
+.profileCircle{
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 50%;
+  background-color: white;
+  border-style: solid;
+  border-width: 3rpx;
+  border-color: #a0a0a0;
+  margin-top: 60rpx;
+}
+/* 头像 */
+.profilePic{
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 50%;
+  margin-top: 60rpx;
+}
+/* 昵称 */
+.nickName{
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #0000a0;
+  margin-top: 30rpx;
+}
+/* 个人详情整体 */
+.personalInfo{
+  display: flex;
+  height: 600rpx;
+  width: 600rpx;
+  background-color: white;
+  border-radius: 20rpx;
+  margin-top: 30rpx;
+}
+/* 每行信息 */
+.info-row{
+  display: flex;
+  height: 100rpx;
+  width: 600rpx;
+  border-bottom: 3rpx solid  #e5e5e5;
+  align-items: center;
+  font-size: 28rpx;
+}
+/* 每行标题 */
+.title{
+  margin-left: 60rpx;
+  font-weight: bold;
+}
+/* 每行内容 */
+.content{
+  color: #a0a0a0;
+  margin-right: 60rpx;
+  margin-left: auto;
+}
+button{
+  background-color: #00d7b9;
+  font-size: 35rpx;
+  width: 500rpx;
+  margin-top: 60rpx;
+  border-radius: 80rpx;
+}

@@ -1,0 +1,34 @@
+/* packageB/pages/details/details.wxss */
+.topMenu{
+  background-color: white;
+}
+/* 顶部切换菜单view */
+.titleArea{
+  /* background-color: seagreen; */
+  display:flex;
+  height: 100rpx;
+  align-items: center;
+  justify-content: center;
+}
+/* 菜单项:背景、宽度、文字居中 */
+.shift-detail{
+  width: 325rpx;
+  text-align: center;
+}
+/* 文字 */
+.placeHolder{
+  font-size: 32rpx;
+  /* color: #a0a0a0; */
+}
+/* 切换线 */
+movable-area{
+  width: 750rpx;
+  height: 8rpx;
+}
+movable-view{
+  background-color: #00d7b9;
+  height: 8rpx;
+  width: 150rpx;
+  border-radius: 100rpx;
+  margin: 0 0 0 137rpx;
+}

@@ -1,0 +1,40 @@
+/* packageB/pages/more/more.wxss */
+/* 更多信息容器 */
+.moreContainer{
+  display: flex;
+  align-items: center;
+}
+/* 页面区域 */
+.page-area{
+  display: flex;
+  height: 350rpx;
+  width: 600rpx;
+  background-color: white;
+  border-radius: 20rpx;
+  margin-top: 30rpx;
+  box-shadow:0px 0px 6px #00d7b9;
+}
+/* 每行信息 */
+.info-row{
+  display: flex;
+  width: 600rpx;
+  align-items: center;
+  font-size: 28rpx;
+  margin-top: 25rpx;
+}
+/* 标题 */
+.title{
+  width: 140rpx;
+  margin-left: 30rpx;
+  color: #a0a0a0;
+}
+/* 内容 */
+.content{
+  width: 400rpx;
+  margin-right: 30rpx;
+}
+/*  */
+.describe{
+  font-size: 28rpx;
+
+}

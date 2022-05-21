@@ -1,0 +1,20 @@
+<!--components/custom-card/my-card.wxml-->
+<view class="flex-item card" style="flex-direction: column;">
+  <view class="cardTitle">
+    <van-icon name="clock" size="18px" color="#0000a0" class="vanIcon"/>
+    <text class="sub-title time">{{time}}</text>
+  </view>
+
+  <view class="cardTitle">
+    <van-icon name="location" size="18px" color="#0000a0" class="vanIcon"/>
+    <text class="sub-title location">{{location}}</text>
+  </view>
+
+  <view class="cardTitle bottomLine" style="flex-direction:row;">
+    <view class="sub-title task"><text>{{task}}</text></view>
+    <view class="detailShape" bind:tap="seeDetailsHandler">
+      <text class="details">{{tag}}</text>
+      <van-icon name="arrow" size="12px" color="white" class="arrowIcon"/>
+    </view>
+  </view>
+</view>

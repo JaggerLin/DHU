@@ -1,0 +1,21 @@
+<!--packageB/pages/details/details.wxml-->
+<view class="detailsContainer">
+  <view class="topMenu">
+      <view class="titleArea" style="flex-direction: row;">
+        <view class="shift-detail Affair" bind:tap="tapLeft">
+          <text class="placeHolder" style="color: {{leftColor}};">班组事务</text>
+        </view>
+        <view class="shift-detail Activity" bind:tap="tapRight">
+          <text class="placeHolder" style="color: {{rightColor}};">班组活动</text>
+        </view>
+    </view>
+    <movable-area>
+      <movable-view x="{{x}}" y="{{y}}" direction="horizontal" damping="40" disabled="false"></movable-view>
+    </movable-area>
+  </view>
+  
+  <view class="pageBody">
+    <my-card bind:see="getCurrentDetail"></my-card>
+    <my-card bind:see="getCurrentDetail"></my-card>
+  </view>
+</view>
