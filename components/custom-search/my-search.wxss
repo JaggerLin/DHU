@@ -1,0 +1,29 @@
+/* components/custom-search/my-search.wxss */
+/* 搜索栏容：背景、高度、容器与盒子左右间距、弹性布局、内部上下居中 */
+.my-search-container {
+  background-color: #0000a0;
+  height: 50px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 搜索栏盒子：高度、背景色、圆角、宽度、弹性、内部上下居中、左右居中 */
+.my-search-box {
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+/* 文字：字体、文字与图标的间距 */
+.my-search-box .placeholder {
+  font-size: 16px;
+  color: gray;
+  margin-left: 8px;
+}
+.my-search-box .icon-small{
+  margin-left: 15px;
+}

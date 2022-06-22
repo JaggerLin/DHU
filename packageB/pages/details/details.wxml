@@ -1,0 +1,60 @@
+<!--packageB/pages/details/details.wxml-->
+<!-- 顶部栏菜单 -->
+<view class="detailsContainer">
+  <view class="topMenu">
+      <view class="titleArea" style="flex-direction: row;">
+        <view class="shift-detail Affair" bind:tap="tapLeft">
+          <text class="placeHolder" style="color: {{leftColor}};">班组事务</text>
+        </view>
+        <view class="shift-detail Activity" bind:tap="tapRight">
+          <text class="placeHolder" style="color: {{rightColor}};">班组活动</text>
+        </view>
+    </view>
+    <movable-area>
+      <movable-view x="{{x}}" y="{{y}}" direction="horizontal" damping="40" disabled="false"></movable-view>
+    </movable-area>
+  </view>
+  <!-- 二级菜单 -->
+  <view class="secondMenu">
+    <block  wx:if="{{selectSign}}">
+      <view class="btnArea" style="flex-direction: row;">
+        <button class="mini-btn" type="default" plain="true" size="mini" bindtap="tapLeft">所有</button>
+        <button class="mini-btn" type="default" plain="true" size="mini" bindtap="getDoing">待完成</button>
+        <button class="mini-btn" type="primary" plain="true" size="mini" bindtap="getDone">已完成</button>
+        <button class="mini-btn" type="warn" plain="true" size="mini" bindtap="getCanceled">已取消</button>
+      </view>
+    </block>
+  </view>
+  <!-- 滚动区域 -->
+  <view class="pageBody">
+    <scroll-view scroll-y="true" style="height: 1000rpx;">
+      <view class="flexWrp" style="flex-direction:column;">
+      <block wx:if="{{selectSign == 1}}">
+        <view class="card1" wx:for="{{eventArray}}" wx:key="_id">
+          <my-card bind:see="getMoreInfo" time="{{item.deadline}}" location="{{item.address}}" task="{{item.eventName}}" tag="{{item.status}}" id="{{item._id}}"></my-card>
+        </view>
+      </block>
+      <block wx:if="{{selectSign == 2}}">
+        <view class="card1" wx:for="{{eventArray}}" wx:key="_id">
+          <my-card bind:see="getMoreInfo" time="{{item.deadline}}" location="{{item.address}}" task="{{item.eventName}}" tag="{{item.status}}" id="{{item._id}}"></my-card>
+        </view>
+      </block>
+      <block wx:if="{{selectSign == 3}}">
+        <view class="card1" wx:for="{{eventArray}}" wx:key="_id">
+          <my-card bind:see="getMoreInfo" time="{{item.deadline}}" location="{{item.address}}" task="{{item.eventName}}" tag="{{item.status}}" id="{{item._id}}"></my-card>
+        </view>
+      </block>
+      <block wx:if="{{selectSign == 4}}">
+        <view class="card1" wx:for="{{eventArray}}" wx:key="_id">
+          <my-card bind:see="getMoreInfo" time="{{item.deadline}}" location="{{item.address}}" task="{{item.eventName}}" tag="{{item.status}}" id="{{item._id}}"></my-card>
+        </view>
+      </block>
+      <block wx:else>
+        <view class="card1" wx:for="{{activityArray}}" wx:key="_id">
+          <my-card bind:see="getMoreInfo" time="{{item.deadline}}" location="{{item.address}}" task="{{item.eventName}}" tag="{{item.status}}" id="{{item._id}}"></my-card>
+        </view>
+      </block>
+      </view>
+    </scroll-view>
+  </view>
+</view>

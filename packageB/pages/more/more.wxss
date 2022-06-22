@@ -1,0 +1,61 @@
+/* packageB/pages/more/more.wxss */
+/* 更多信息容器 */
+.moreContainer{
+  display: flex;
+  align-items: center;
+}
+/* 页面区域 */
+.page-area{
+  display: flex;
+  height: 320rpx;
+  width: 600rpx;
+  background-color: white;
+  border-radius: 20rpx;
+  margin-top: 30rpx;
+  box-shadow:0px 0px 6px #00d7b9;
+}
+/* 每行信息 */
+.info-row{
+  display: flex;
+  width: 600rpx;
+  align-items: center;
+  font-size: 28rpx;
+  margin-top: 20rpx;
+}
+/* 标题 */
+.title{
+  width: 140rpx;
+  margin-left: 30rpx;
+  color: #a0a0a0;
+}
+/* 内容 */
+.content{
+  width: 400rpx;
+  margin-right: 30rpx;
+}
+/*  */
+.describe{
+  font-size: 28rpx;
+}
+/* 事件编号 */
+.titleContent{
+  font-size: 20rpx;
+}
+/* 按钮区域 */
+.btn-area{
+  display: flex;
+  height: 100rpx;
+  width: 600rpx;
+  margin-top: 20rpx;
+}
+.confirm{
+  margin-left: 60rpx;
+  width: 200rpx;
+  border-radius: 50rpx;
+}
+.cancel{
+  width: 200rpx;
+  margin-right: 60rpx;
+  margin-left: auto;
+  border-radius: 50rpx;
+}

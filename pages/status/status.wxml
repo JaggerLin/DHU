@@ -1,0 +1,135 @@
+<!--pages/status/status.wxml-->
+<view class="statusContainer">
+  <view class="statusTopView">
+    <view>
+      <picker mode="date" value="{{date}}" start="2022-01-01" end="2030-01-01" bindchange="bindDateChange">
+      <view class="picker">
+        {{currentDate}}
+      </view>
+      </picker>
+    </view>
+    <view class="lineView" style="flex-direction: row;">
+      <view class="flex-item leftArrow" bindtap="leftArrow"><van-icon name="arrow-left" size="22px" color="#00d7b9" /></view>
+      <view class="flex-item productionLine"><text class="lineName">{{lineName}}</text></view>
+      <view class="flex-item rightArrow" bindtap="rightArrow"><van-icon name="arrow" size="22px" color="#00d7b9"/></view>
+    </view>
+  </view>
+
+  <view class="categoryBlock" wx:for="{{updateArray}}" wx:key="id">
+    <view class="shape-row first">
+      <mp-row>
+        <mp-col span="{{8}}" push="{{2}}">
+          <view>
+            <view class="col" style="flex-direction: column;">
+              <view class="van-icon normal" wx:if="{{item.quality}}"><van-icon name="checked" size="36px" color="#0000a0"/></view>
+              <view class="vanIcon abnormal" wx:if="{{!item.quality}}"> 
+                <view class="van-icon"><van-icon name="warning" size="16px" color="#d64200"/></view>
+                <view class="performance qualityPrf"><text>请沟通</text></view>
+              </view>
+            </view>
+          </view>
+        </mp-col>
+        <mp-col span="{{8}}" push="{{1}}">
+          <view>
+            <view class="col">
+              <view class="van-icon normal" wx:if="{{item.safety}}"><van-icon name="checked" size="36px" color="#0000a0"/></view>
+              <view class="vanIcon abnormal" wx:if="{{!item.safety}}"> 
+                <view class="van-icon"><van-icon name="warning" size="16px" color="#d64200"/></view>
+                <view class="performance safetyPrf"><text>请沟通</text></view>
+              </view>
+            </view>
+          </view>
+        </mp-col>
+        <mp-col span="{{8}}" pull="{{0}}">
+          <view>
+            <view class="col">
+              <view class="van-icon normal" wx:if="{{item.efficiency == 0}}"><van-icon name="checked" size="36px" color="#0000a0"/></view>
+              <view class="vanIcon abnormal" wx:if="{{item.efficiency > 0}}"> 
+                <view class="van-icon"><van-icon name="warning" size="16px" color="#d64200"/></view>
+                <view class="timeGap"><text>-{{item.efficiency}}h</text></view>
+              </view>
+            </view>
+          </view>
+        </mp-col>
+      </mp-row>
+    </view> 
+
+    <view class="title-row first">
+      <mp-row>
+        <mp-col span="{{8}}" push="{{2}}">
+          <view>
+            <view class="col">质量</view>
+          </view>
+        </mp-col>
+        <mp-col span="{{8}}" push="{{1}}">
+          <view>
+            <view class="col">安全</view>
+          </view>
+        </mp-col>
+        <mp-col span="{{8}}" pull="{{0}}">
+          <view>
+            <view class="col">效率</view>
+          </view>
+        </mp-col>
+      </mp-row>
+    </view> 
+
+    <view class="shape-row second">
+      <mp-row>
+        <mp-col span="{{8}}" push="{{2}}">
+          <view>
+            <view class="col">
+              <view class="van-icon normal" wx:if="{{item.foodSafety}}"><van-icon name="checked" size="36px" color="#0000a0"/></view>
+              <view class="vanIcon abnormal" wx:if="{{!item.foodSafety}}"> 
+                <view class="van-icon"><van-icon name="warning" size="16px" color="#d64200"/></view>
+                <view class="performance foodSafety"><text>请沟通</text></view>
+              </view>
+            </view>
+          </view>
+        </mp-col>
+        <mp-col span="{{8}}" push="{{1}}">
+          <view>
+            <view class="col">
+              <view class="van-icon normal" wx:if="{{item.overdue == item.rework}}"><van-icon name="checked" size="36px" color="#0000a0"/></view>
+              <view class="vanIcon abnormal" wx:if="{{item.overdue != item.rework}}"> 
+                <view class="van-icon"><van-icon name="warning" size="16px" color="#d64200"/></view>
+                <view class="performance overdue"><text class="exceed">过期: {{item.overdue}}kg</text></view>
+                <view class="performance rework"><text class="exceed">待拆: {{item.rework}}箱</text></view>
+              </view>
+            </view>
+          </view>
+        </mp-col>
+        <mp-col span="{{8}}" pull="{{0}}">
+          <view>
+            <view class="col">
+              <view class="van-icon normal" wx:if="{{item.operator != 0}}"> 
+                <view class="operator"><text>{{item.operator}}</text></view>
+              </view>
+              <view class="van-icon notNeed" wx:if="{{item.operator == ''}}"><van-icon name="clear" size="36px" color="#0000a0"/></view>
+            </view>
+          </view>
+        </mp-col>
+      </mp-row>
+    </view> 
+
+    <view class="title-row second">
+      <mp-row>
+        <mp-col span="{{8}}" push="{{2}}">
+          <view>
+            <view class="col">食品安全</view>
+          </view>
+        </mp-col>
+        <mp-col span="{{8}}" push="{{1}}">
+          <view>
+            <view class="col">超耗</view>
+          </view>
+        </mp-col>
+        <mp-col span="{{8}}" pull="{{0}}">
+          <view>
+            <view class="col">在岗</view>
+          </view>
+        </mp-col>
+      </mp-row>
+    </view> 
+  </view>
+</view>

@@ -1,0 +1,41 @@
+<!--pages/home/home.wxml 
+data-* 属性用于存储页面的私有自定义数据，*代表属性名不区分大小写
+标签属性内的数据绑定使用mustache语法的{{}}需要在双引号之内
+-->
+<view class="homeContainer">
+  <!-- 顶部：顶部文字、搜索栏、图片 -->
+  <view class="homeTopView">
+    <view class="topTitle">Tomorrow Starts Today</view>
+    <view class="searchBox"><my-search searchDefault="{{searchDefault}}" bind:open="openSearch"></my-search></view>
+    <view class="imageView">
+      <view class="imageCtn"><image mode="scaleToFill" src="{{imageSrc}}"></image></view>
+    </view>
+  </view>
+  <!-- 选项块：选项标题、4个选项块及小标题 -->
+  <view class="homeSelectionView">
+    <view class="selectionTitle">工作填写</view>
+    <view class="selectionFlex">
+      <view class="flexWrp" style="flex-direction:row;">
+        <view class="flex-item block1"><text class="blockTitle">生产</text></view>
+        <view class="flex-item block2"><text class="blockTitle">小组</text></view>
+        <view class="flex-item block3"><text class="blockTitle">事务</text></view>
+        <view class="flex-item block4"><text class="blockTitle">活动</text></view>
+      </view>
+    </view>
+  </view>
+  <!-- 事件：卡片标题、事件卡片 -->
+  <view class="homeAffairView">
+    <view class="affairTitle">事务(最近一周)</view>
+    <view class="flexWrp" style="flex-direction:column;">
+      <view class="card1" wx:for="{{eventArray}}" wx:key="_id">
+        <my-card bind:see="enterDetails" time="{{item.deadline}}" location="{{item.address}}" task="{{item.eventName}}" tag="{{item.status}}"></my-card>
+      </view>
+      <view class="blank"></view>
+    </view>
+  </view>
+</view>
+
+
+
+
+

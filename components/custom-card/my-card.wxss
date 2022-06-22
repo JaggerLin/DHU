@@ -1,0 +1,65 @@
+/* components/custom-card/my-card.wxss */
+/* 卡片:宽度50+650+50，高度220 */
+.flex-item{
+  background-color: white;
+  width: 650rpx;
+  height: 220rpx;
+  border-radius: 40rpx;
+  margin-right: 30rpx;
+  display: flex;
+  margin:30rpx 0 0 50rpx;
+  box-shadow: 2px 2px 4px #b0b0b0;
+}
+/* 卡片中内容： 图标、文字、模拟按钮*/
+/* 图标 */
+.vanIcon{
+  margin-left: 30rpx;
+}
+/* 标题view */
+.cardTitle{
+  margin: 15rpx 0 0 20rpx;
+}
+/* 小标题 */
+.sub-title{
+  font-weight: bold;
+  color: #0000a0;
+  font-size: 28rpx;
+  margin-left: 30rpx;
+}
+/* 任务名称 */
+.task{
+  padding-left: 30rpx;
+  width: 300rpx;
+}
+/* 详情查看 */
+/* 整体底部一行 */
+.bottomLine{
+  display: flex;
+  margin-top: 15rpx;
+}
+/* 模拟按钮形状 */
+.detailShape{
+  background-color: #0000a0;
+  width: 180rpx;
+  height: 70rpx;
+  border-radius: 60rpx;
+  margin-left: 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 详情文字 */
+.details{
+  font-size: 26rpx;
+  color: white;
+  font-weight: bold;
+  margin-left: 15rpx;
+}
+/* 详情后图标 */
+.van-arrowIcon{
+  margin-left: 15rpx;
+}
+/* 事件名：上下居中 */
+.sub-title{
+  align-self: center;
+}

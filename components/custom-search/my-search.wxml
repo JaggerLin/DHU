@@ -1,0 +1,8 @@
+<!--components/custom-search/my-search.wxml-->
+<view class="my-search-container">
+  <!-- 使用 view 组件模拟 input 输入框的样式 -->
+  <view class="my-search-box" bind:tap="searchBoxHandler">
+    <icon class="icon-small" type="search" size="16" color="#ffdc00"></icon>
+    <text class="placeholder">{{searchDefault}}</text>
+  </view>
+</view>

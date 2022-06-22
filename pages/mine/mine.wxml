@@ -1,0 +1,44 @@
+<!--pages/mine/mine.wxml-->
+<view class="mineContainer" style="flex-direction: column;">
+  <block wx:if="{{!hasUserInfo}}">
+    <view class="profileCircle"></view>
+    <view class="nickName">当前未登录</view>
+    <button type="primary" class="login" wx:if="{{!hasUserInfo}}" bindtap="loginBtn">登录</button>
+  </block>
+
+  <block wx:else>
+    <image class="profilePic" src="{{userInfo.avatarUrl}}"></image>
+    <view class="nickName">{{userInfo.nickName}}</view>
+    <view class="personalInfo" style="flex-direction: column;" wx:for="{{userDeatils}}" wx:key="_id">
+      <view class="info-row identity" style="flex-direction: row;">
+        <view class="title"><text>同事号</text></view>
+        <view class="content">{{item.identity}}</view>
+      </view>
+      <view class="info-row name" style="flex-direction: row;">
+        <view class="title"><text>姓名</text></view>
+        <view class="content">{{item.name}}</view>
+      </view>
+      <view class="info-row sex" style="flex-direction: row;">
+        <view class="title"><text>性别</text></view>
+        <view class="content">{{item.sex}}</view>
+      </view>
+      <view class="info-row birthday" style="flex-direction: row;">
+        <view class="title"><text>生日</text></view>
+        <view class="content">{{item.birthday}}</view>
+      </view>
+      <view class="info-row joinDate" style="flex-direction: row;">
+        <view class="title"><text>加入时间</text></view>
+        <view class="content">{{item.joinDate}}</view>
+      </view>
+      <view class="info-row phone" style="flex-direction: row;">
+        <view class="title"><text>手机号</text></view>
+        <view class="content">{{item.phone}}</view>
+      </view>
+      
+    
+    </view>
+    <view class="logoutBtn">
+      <button type="primary" class="logout" bindtap="logOut">退出</button>
+    </view>
+  </block>
+</view>

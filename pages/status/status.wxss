@@ -1,0 +1,122 @@
+/* pages/status/status.wxss */
+/* 整体背景:在app.wxss中设置更好 */
+/* .statusContainer{
+  background-color: #e9e9e9;
+} */
+/* 顶部蓝色半矩形： */
+.statusTopView{
+  height: 200px;
+  background-color: #0000a0;
+  border-radius: 0 0 30px 30px;
+}
+/* 选中日期显示 */
+.picker{
+  /* background-color: red; */
+  padding-top: 100rpx;
+  text-align: center;
+  font-size: 40rpx;
+  color: white;
+}
+/* 线号切换 */
+.lineView{
+  display: flex;
+  justify-content: center;
+}
+.flex-item{
+  /* background-color: red; */
+  margin-top: 30rpx;
+  align-self: center;
+}
+/* 左箭头 */
+.leftArrow{
+  margin-right: 50rpx;
+}
+/* 线号 */
+.productionLine{
+  font-size: 70rpx;
+  font-weight: bolder;
+  color: white;
+}
+/* 右箭头 */
+.rightArrow{
+  margin-left: 50rpx;
+}
+/* 类别模块 */
+/* 形状行 */
+.shape-row{
+  margin-top: 70rpx;
+}
+/* 标题行 */
+.title-row{
+  margin-top: 10rpx;
+}
+/* 正常下形状列 */
+.shape-row .normal{
+  background-color:#00d7b9;
+  height: 160rpx;
+  width: 160rpx;
+  border-radius: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 4px #b0b0b0;
+}
+/* 标题列 */
+.title-row .col{
+  background-color: #c0c0c0;
+  color: white;
+  font-weight: bold;
+  font-size: 30rpx;
+  height: 60rpx;
+  width: 160rpx;
+  border-radius: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 异常下形状列 */
+.shape-row .abnormal{
+  background-color:#ffdc00;
+  height: 160rpx;
+  width: 160rpx;
+  border-radius: 30rpx;
+  box-shadow: 2px 2px 4px #b0b0b0;
+}
+/* 异常时警告图标 */
+.abnormal .van-icon{
+  margin-left: 6rpx;
+}
+/* 异常时落后时间 */
+.abnormal .timeGap{
+  color: white;
+  font-size: 48rpx;
+  font-weight: bold;
+  margin-left: 20rpx;
+}
+/* 操作员 */
+.operator{
+  color: white;
+  font-size: 36rpx;
+  font-weight: bold;
+  align-self: center;
+}
+/* 停产 */
+.notNeed{
+  background-color: #c0c0c0;
+  height: 160rpx;
+  width: 160rpx;
+  border-radius: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 常规表现 */
+.performance{
+  color: white;
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-left: 20rpx;
+}
+.exceed{
+  font-size: 23rpx;
+}
