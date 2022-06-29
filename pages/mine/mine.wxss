@@ -58,10 +58,18 @@
   margin-right: 60rpx;
   margin-left: auto;
 }
+<<<<<<< HEAD
+=======
+/* 按钮 */
+>>>>>>> 75e084e (new)
 button{
   background-color: #00d7b9;
   font-size: 35rpx;
   width: 500rpx;
   margin-top: 60rpx;
   border-radius: 80rpx;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 75e084e (new)

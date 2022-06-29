@@ -20,6 +20,15 @@
         "pages/details/details",
         "pages/activity/activity"
       ]
+<<<<<<< HEAD
+=======
+    },
+    {
+      "root": "packageC",
+      "pages": [
+        "pages/image/image"
+      ]
+>>>>>>> 75e084e (new)
     }
   ],
   "window":{
@@ -67,7 +76,11 @@
     "van-icon": "@vant/weapp/icon/index",
     "my-card":"/components/custom-card/my-card",
     "my-sl":"/components/custom-swtichLine/my-sl",
+<<<<<<< HEAD
     "van-datetime-picker": "@vant/weapp/datetime-picker/index"
+=======
+    "van-field": "@vant/weapp/field/index"
+>>>>>>> 75e084e (new)
   },
   "sitemapLocation": "sitemap.json"
 }

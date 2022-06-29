@@ -37,6 +37,10 @@
       
     
     </view>
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 75e084e (new)
     <view class="logoutBtn">
       <button type="primary" class="logout" bindtap="logOut">退出</button>
     </view>

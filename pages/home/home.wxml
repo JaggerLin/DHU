@@ -23,6 +23,22 @@ data-* 属性用于存储页面的私有自定义数据，*代表属性名不区
       </view>
     </view>
   </view>
+<<<<<<< HEAD
+=======
+  <!-- 常用工具 -->
+  <view class="homeSelectionView">
+    <view class="selectionTitle">常用工具</view>
+    <view class="selectionFlex">
+      <view class="flexWrp" style="flex-direction:row;">
+        <view class="flex-icon"><van-icon name="scan" size="115rpx" color="#0000a0" bind:click='navToImage'/></view>
+        <view class="flex-icon"><van-icon name="calendar-o" size="120rpx" color="#0000a0"/></view>
+        <view class="flex-icon"><van-icon name="sign" size="120rpx" color="#0000a0"/></view>
+        <view class="flex-icon"><van-icon name="user-circle-o" size="120rpx" color="#0000a0"/></view>
+        <view class="flex-icon"><van-icon name="hot-o" size="120rpx" color="#0000a0"/></view>
+      </view>
+    </view>
+  </view>
+>>>>>>> 75e084e (new)
   <!-- 事件：卡片标题、事件卡片 -->
   <view class="homeAffairView">
     <view class="affairTitle">事务(最近一周)</view>

@@ -1,0 +1,25 @@
+<!--packageC/pages/image/image.wxml-->
+<view class="mainView">
+ <view class="titleView" bindtap="callMenu" style="flex-direction: row;">
+  <view class="title1">图片预览</view>
+  <view class="title2">发现项描述</view>
+  <view class="title3">删除</view>
+ </view>
+ <!-- 图片本地预览 -->
+ <view wx:if="{{imageList.length}}" class="previewView" wx:for="{{imageList}}" wx:key="index" style="flex-direction: column;">
+   <view class="previewItem" style="flex-direction: row;">
+   	 <!-- 图片 -->
+     <image src="{{item}}" class="chooseImg item" data-index="{{index}}" bindtap="previewBigImage"></image>
+     <!-- 文字描述 -->
+     <van-field class="item" value="{{ value }}" placeholder="线号+发现项+负责人" border="{{ false }}" bind:change="onChange"/>
+     <!-- 删除按钮 -->
+     <image class="removeSVG removeIcon item" data-index="{{index}}" catchtap="removeChooseImage"></image>
+     <!-- 提交状态 -->
+   </view>
+  </view>
+ <!-- 上传按钮 -->
+ <view class="uploadBtn">
+   <image src="" class="upload_img uploadSVG" bindtap="uploadImgToCloud"></image>
+ </view>
+</view>
+

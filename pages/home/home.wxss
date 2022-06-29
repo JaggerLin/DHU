@@ -63,7 +63,11 @@ view.imageCtn image{
 }
 /* 选项标题：字体 */
 .selectionTitle{
+<<<<<<< HEAD
   font-size: 18px;
+=======
+  font-size: 15px;
+>>>>>>> 75e084e (new)
   color: #0000a0;
   font-weight: bold;
   margin:30rpx 0 0 30rpx;
@@ -71,7 +75,11 @@ view.imageCtn image{
 
 /* 卡片标题 */
 .affairTitle{
+<<<<<<< HEAD
   font-size: 18px;
+=======
+  font-size: 15px;
+>>>>>>> 75e084e (new)
   color: #0000a0;
   font-weight: bold;
   margin:30rpx 0 0 30rpx;
@@ -80,3 +88,14 @@ view.imageCtn image{
 .blank{
   margin-bottom: 120rpx;
 }
+<<<<<<< HEAD
+=======
+/* 工具图标 */
+.flex-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8rpx;
+  margin-left: 8rpx;
+}
+>>>>>>> 75e084e (new)

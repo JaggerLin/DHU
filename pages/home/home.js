@@ -11,11 +11,19 @@ Page({
    * 页面的初始数据
    */
   data: {
+<<<<<<< HEAD
     imageSrc:'/images/home/migaj.png',
     searchDefault:'',
     eventArray: [],
     currentDate: util.formatDate(new Date()),
     recentDate: util.recentDate(new Date()),
+=======
+    imageSrc:'/images/home/migaj.png',//动图地址
+    searchDefault:'',
+    eventArray: [],//事件存放数组
+    currentDate: util.formatDate(new Date()),//当前日期
+    recentDate: util.recentDate(new Date()),//当前日期+7
+>>>>>>> 75e084e (new)
   },
 
   /**
@@ -29,7 +37,11 @@ Page({
       fields:[],
       actions:[]
     })
+<<<<<<< HEAD
     this.getRecent()
+=======
+    // this.getRecent()
+>>>>>>> 75e084e (new)
   },
   // 搜索栏跳转事件
   openSearch: function() {
@@ -77,6 +89,17 @@ Page({
     })
     .catch(console.error)
   },
+<<<<<<< HEAD
+=======
+  navToImage: function name() {
+    wx.navigateTo({
+      url: '/packageC/pages/image/image',
+      events: {
+        ec: e => console.log(e)
+      }
+    })
+  },
+>>>>>>> 75e084e (new)
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

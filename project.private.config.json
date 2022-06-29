@@ -40,6 +40,16 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+<<<<<<< HEAD
+=======
+        },
+        {
+          "name": "",
+          "pathName": "packageC/pages/image/image",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+>>>>>>> 75e084e (new)
         }
       ]
     }

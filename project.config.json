@@ -16,7 +16,11 @@
     "enhance": true,
     "postcss": true,
     "preloadBackgroundData": false,
+<<<<<<< HEAD
     "minified": false,
+=======
+    "minified": true,
+>>>>>>> 75e084e (new)
     "newFeature": false,
     "coverView": true,
     "nodeModules": false,
